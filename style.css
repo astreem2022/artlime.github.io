@@ -1,0 +1,66 @@
+  .circle-text{ 
+    position: absolute;
+    left: 140px;
+    top: 150px;
+    width: 150px;
+    //height: 150px;
+    text-align: center;
+    z-index: 4;
+}
+.circle-text img{
+	//width: 150px;
+    //height: 150px;
+}
+
+
+
+
+  .circle-text1{ 
+    position: absolute;
+    left: 350px;
+    top: 150px;
+    width: 150px;
+    height: 150px;
+    text-align: center;
+    z-index: 4;
+}
+
+
+
+    @-moz-keyframes textRotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes textRotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes textRotate {
+  0% {
+    transform: rotate(360deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+.circle-text{
+  -webkit-animation: textRotate infinite 20s linear;
+  -moz-animation: textRotate infinite 20s linear;
+  animation: textRotate infinite 20s linear;
+ animation-fill-mode: forwards;
+}
+.circle-text1{
+  -webkit-animation: textRotate infinite 10s linear;
+  -moz-animation: textRotate infinite 10s linear;
+  animation: textRotate infinite 10s linear;
+ //animation-fill-mode: both;
+}
+
